@@ -1,6 +1,8 @@
 ![doodle](./doodle.jpg)
 
-# UCSD CSE 231 Spring 2024 Syllabus and Logistics
+# UCSD CSE 231 (Sp24)
+
+## Crew
 
 - [Ranjit Jhala](https://ranjitjhala.github.io) (Instructor)
 - Nico Lehmann (TA, 🦀)
