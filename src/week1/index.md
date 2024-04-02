@@ -9,182 +9,40 @@ scratch_ based on the instructions here.
 
 ## Setup
 
-The necessary tools are installed on `ieng6.ucsd.edu`, and you should have a
-course-specific account set up that you can access [via
-ETS](https://sdacs.ucsd.edu/~icc/index.php). You can use standard remote access
-tools like `ssh` or Visual Studio Code plugins like
-[`sshfs`](https://marketplace.visualstudio.com/items?itemName=Kelvin.vscode-sshfs)
-to match your preferred working style.
+You can start by
 
-You may also want to work on your own computer. You will need to install `rust`
-and `cargo`:
+- accepting the assignment on [github](TODO), and then
+- opening the assignment CodeSpaces
+
+The necessary tools will be present in the CodeSpace.
+
+You may also want to work on your own computer, in which case you'll need to install `rust` and `cargo`
 
 [https://www.rust-lang.org/tools/install](https://www.rust-lang.org/tools/install)
 
-You may also (depending on your system) need to install
-[`nasm`](https://www.nasm.us/). On OSX I used `brew install nasm`; on other
-systems your package manager of choice likely has a version. On Windows you
-should use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
+You may also (depending on your system) need to install [`nasm`](https://www.nasm.us/).
+
+On my mac I used `brew install nasm`; on other systems your package manager of choice likely
+has a version. On Windows you should use [Windows Subsystem for Linux (WSL)](https://learn.microsoft.com/en-us/windows/wsl/)
 
 **The assignments assume that your computer can build and run x86-64-bit
 binaries.  This is true of most (but not all) mass-market Windows and Linux
 laptops. Newer Macs use a different ARM architecture, _but_ can also run legacy
 x86-64-bit binaries, so those are fine as well.  You should ensure that
-whatever you do to build your compiler also runs on `ieng6`, which is our
-standard environment for testing these.**
+whatever you do to build your compiler also runs on the github codespace,
+standard environment for testing your work.**
 
-The first few sections of the [Rust
-Book](https://doc.rust-lang.org/book/ch01-00-getting-started.html) walk you
+## Rust 101
+
+The first few sections of the [Rust Book](https://doc.rust-lang.org/book/ch01-00-getting-started.html) walk you
 through installing Rust, as well. We'll assume you've gone through the
 “Programming a Guessing Game” chapter of that book before you go on, so
 writing and running a Rust program isn't too weird to you.
 
-## The Adder Language
 
-In each of the next several assignments, we'll introduce a language that we'll
-implement.  We'll start small, and build up features incrementally.  We're
-starting with Adder, which has just a few features –numbers and three
-operations.
+## Implementing a Compiler for Numbers
 
-There are a few pieces that go into defining a language for us to compile:
-
-- A description of the concrete syntax – the text the programmer writes.
-- A description of the abstract syntax – how to express what the
-  programmer wrote in a data structure our compiler uses.
-- A _description of the behavior_ of the abstract
-  syntax, so our compiler knows what the code it generates should do.
-
-### Concrete Syntax
-
-The concrete syntax of Adder is:
-
-```text
-<expr> :=
-  | <number>
-  | (add1 <expr>)
-  | (sub1 <expr>)
-  | (negate <expr>)
-```
-
-### Abstract Syntax
-
-The abstract syntax of Adder is a Rust datatype, and corresponds nearly
-one-to-one with the concrete syntax. We'll show just the parts for `add1` and
-`sub1` in this tutorial, and leave it up to you to include `negate` to get
-practice.
-
-```rust
-enum Expr {
-    Num(i32),
-    Add1(Box<Expr>),
-    Sub1(Box<Expr>)
-}
-```
-
-The `Box` type is necessary in Rust to create recursive types like these (see
-[Enabling Recursive Types with
-Boxes](https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes)).
-If you're familiar with C, it serves roughly the same role as introducing a
-pointer type in a struct field to allow recursive fields in structs.
-
-The reason this is necessary is that the Rust compiler calculates a size and
-tracks the contents of each field in each variant of the `enum`. Since an
-`Expr` could be an `Add1` that contains another `Add1` that contains another
-`Add1`... and so on, there's no way to calculate the size of an enum variant like
-
-```rust
-    Add1(Expr)
-```
-
-(What error do you get if you try?)
-
-Values of the `Box` type always have the size of a single reference (probably
-represented as a 64-bit address on the systems we're using). The address will
-refer to an `Expr` that has already been allocated somewhere.  `Box` is one of
-several _smart pointer_ types whose memory are carefully, and automatically,
-memory-managed by Rust.
-
-### Semantics
-
-A ``semantics'' describes the languages' behavior without giving all of the
-assembly code for each instruction.
-
-An Adder program always evaluates to a single i32.
-
-- Numbers evaluate to
-themselves (so a program just consisting of `Num(5)` should evaluate to the
-integer `5`).
-- `add1` and `sub1` expressions perform addition or subtraction by one on
-their argument.
-- `negate` produces the result of the argument multiplied by `-1`
-
-There are several examples further down to make this concrete.
-
-Here are some examples of Adder programs:
-
-#### Example 1
-
-**Concrete Syntax**
-
-```scheme
-(add1 (sub1 5))
-```
-
-**Abstract Syntax**
-
-```rust
-Add1(Sub1(Number(5)))
-```
-
-**Result**
-
-```rust
-5
-```
-
-#### Example 2
-
-**Concrete Syntax**
-
-```scheme
-4
-```
-
-**Abstract Syntax**
-
-```rust
-Number(4)
-```
-
-**Result**
-
-```rust
-4
-```
-
-#### Example 3
-
-**Concrete Syntax**
-
-```scheme
-(negate (add1 3))
-```
-
-**Abstract Syntax**
-
-```rust
-Negate(Add1(Number(3)))
-```
-
-**Result**
-
-```rust
--4
-```
-
-## Implementing a Compiler for Adder
-
-We're going to start by _just_ compiling numbers, so we can see how all the
+We're going to start by _just_ compiling **numbers**, so we can see how all the
 infrastructure works. We _won't_ give starter code for this so that you see how
 to build this up from scratch.
 
@@ -210,7 +68,7 @@ concerned with in this assignment.
 
 ### The Runner
 
-We'll start by just focusing on numbers.
+We'll start by just focusing on **numbers**.
 
 It's useful to set up the goal of our compiler, which we'll come back to
 repeatedly in this course:
@@ -334,7 +192,7 @@ You can compile and run this with `cargo run`:
 
 ```console
 $ cargo run
-   Compiling adder v0.1.0 (/Users/joe/src/adder)
+   Compiling adder v0.1.0 ...
 mov rax, 37
 ```
 
@@ -384,7 +242,7 @@ our_code_starts_here:
 Since this now expects _files_ rather than hardcoded input, let's make a test
 file in `test/37.snek` that just contains `37` as contents. Then we'll read the
 “program” (still just a number) from `37.snek` and store the resulting
-assembly in `37.s`. (`snek` is a meme-y spelling of snake, which is a theme of
+assembly in `37.s`. (`snek` is a silly spelling of snake, which is a theme of
 the languages in this course.)
 
 Then we can run our compiler with these command line arguments:
@@ -437,11 +295,14 @@ test/%.run: test/%.s runtime/start.rs
 	rustc -L runtime/ runtime/start.rs -o test/$*.run
 ```
 
+Note: on MACOS
+
+1. Write `macho64` instead of `elf64` and
+2. Write `rustc --target x86_64-apple-darwin ...` (if you have an M1/M2 machine)
+
 (Note that `make` requires tabs not spaces, but we can only use spaces on the
 website, so please replace the four spaces indentation with tab characters when
-you copy it -- [or copy it from Github][makefile-git].)
-
-[makefile-git]: https://github.com/ucsd-compilers-s23/adder/blob/main/Makefile
+you copy it.)
 
 And then you can run just `make test/<file>.run` to do the build steps:
 
@@ -459,12 +320,190 @@ The `cargo run` command will re-run if the `.snek` file or the compiler
 (`src/main.rs`) change, and the assemble-and-link commands will re-run if the
 assembly (`.s` file) or the runtime (`runtime/start.rs`) change.
 
-### Adding Nontrivial Language Features
 
-The overall syntax for the Adder language admits many more features than just
-numbers. With the definition of Adder above, we can have programs like `(add1
+## The Adder Language
+
+In each of the next several assignments, we'll introduce a language that we'll
+implement.  We'll start small, and build up features incrementally.  We're
+starting with Adder, which has just a few features –numbers and three
+operations.
+
+There are a few pieces that go into defining a language for us to compile:
+
+- A description of the concrete syntax – the text the programmer writes.
+- A description of the abstract syntax – how to express what the
+  programmer wrote in a data structure our compiler uses.
+- A _description of the behavior_ of the abstract syntax, so our compiler
+  knows what the code it generates should do.
+
+### Concrete Syntax
+
+The concrete syntax of Adder is:
+
+```text
+<expr> :=
+  | <number>
+  | (add1 <expr>)
+  | (sub1 <expr>)
+  | (negate <expr>)
+```
+
+### Abstract Syntax
+
+The abstract syntax of Adder is a Rust datatype, and corresponds nearly
+one-to-one with the concrete syntax. We'll show just the parts for `add1` and
+`sub1` in this tutorial, and leave it up to you to include `negate` to get
+practice.
+
+```rust
+enum Expr {
+    Num(i32),
+    Add1(Box<Expr>),
+    Sub1(Box<Expr>)
+}
+```
+
+The `Box` type is necessary in Rust to create recursive types like these (see
+[Enabling Recursive Types with Boxes](https://doc.rust-lang.org/book/ch15-01-box.html#enabling-recursive-types-with-boxes)).
+If you're familiar with C, it serves roughly the same role as introducing a
+pointer type in a struct field to allow recursive fields in structs.
+
+The reason this is necessary is that the Rust compiler calculates a size and
+tracks the contents of each field in each variant of the `enum`. Since an
+`Expr` could be an `Add1` that contains another `Add1` that contains another
+`Add1`... and so on, there's no way to calculate the size of an enum variant like
+
+```rust
+    Add1(Expr)
+```
+
+(What error do you get if you try?)
+
+Values of the `Box` type always have the size of a single reference (probably
+represented as a 64-bit address on the systems we're using). The address will
+refer to an `Expr` that has already been allocated somewhere.  `Box` is one of
+several _smart pointer_ types whose memory are carefully, and automatically,
+memory-managed by Rust.
+
+### Semantics
+
+A ``semantics'' describes the languages' behavior without giving all of the
+assembly code for each instruction.
+
+An Adder program always evaluates to a single i32.
+
+- Numbers evaluate to themselves (so a program just consisting of `Num(5)`
+  should evaluate to the integer `5`).
+- `add1` and `sub1` expressions perform addition or subtraction by one on their argument.
+- `negate` produces the result of the argument multiplied by `-1`
+
+There are several examples further down to make this concrete.
+
+Here are some examples of Adder programs:
+
+#### Example 1
+
+**Concrete Syntax**
+
+```scheme
+(add1 (sub1 5))
+```
+
+**Abstract Syntax**
+
+```rust
+Add1(Box::new(Sub1(Box::new(Number(5)))))
+```
+
+**Result**
+
+```rust
+5
+```
+
+#### Example 2
+
+**Concrete Syntax**
+
+```scheme
+4
+```
+
+**Abstract Syntax**
+
+```rust
+Number(4)
+```
+
+**Result**
+
+```rust
+4
+```
+
+#### Example 3
+
+**Concrete Syntax**
+
+```scheme
+(negate (add1 3))
+```
+
+**Abstract Syntax**
+
+```rust
+Negate(Add1(Number(3)))
+```
+
+**Result**
+
+```rust
+-4
+```
+
+## Implement an Interpreter for Adder
+
+As a warm up exercise, implement an *interpreter* for `Adder` which is to say,
+a plain `rust` function that evaluates the `Expr` datatype we defined above.
+
+```rust
+fn eval(e: &Expr) -> i32 {
+    match e {
+        Expr::Num(n) => ...,
+        Expr::Add1(e1) => ...,
+        Expr::Sub1(e1) => ...,
+    }
+}
+```
+
+Write a few tests to convince yourself that your interpreter is working as expected.
+
+In the file `src/main.rs`, you can add a `#[cfg(test)]` section to write tests
+
+```rust
+#[cfg(test)]
+mod tests {
+    #[test]
+    fn test1() {
+      let expr1 = Expr::Num(10);
+      let result = eval(expr1);
+      assert_eq!(result, 10);
+    }
+}
+```
+
+And then you can run the test either in `vscode` or by running `cargo test` in the terminal.
+
+
+
+## Implementing a Compiler for Adder
+
+The overall syntax for the `Adder` language admits many more features than just
+numbers. With the definition of `Adder` above, we can have programs like `(add1
 (sub1 6))`, for example. There can be any numbers of layers of nesting of the
 parentheses, which means we need to think about **parsing** a little bit more.
+
+### Parsing
 
 We're going to design our syntax carefully to avoid thinking too much about
 parsing, though. The parenthesized style of Adder is a subset of what's called
@@ -514,7 +553,9 @@ work pretty well with pattern-matching and I find that helpful.
 `Value` type is really clumsy with pattern matching so it's not great for this
 tutorial.)
 
-We can add ths package to our project by adding it to `Cargo.toml`, which was
+### Parsing with S-Expressions
+
+We can add this package to our project by adding it to `Cargo.toml`, which was
 created when you used `cargo new`. Make it so your `Cargo.toml` looks like this:
 
 ```toml
@@ -588,6 +629,8 @@ match on two the two specific cases that look like `add1` or `sub1` followed by
 some other s-expression. In those cases, we recursively parse, and use
 `Box::new` to match the signature we set up in `enum Expr`.
 
+### Code Generation
+
 So we've got a way to go from more structure text—s-expressions—stored in
 files and produce our `Expr` structure. Now we just need to go from the `Expr`
 ASTs to generated assembly. Here's one way to do that:
@@ -632,6 +675,8 @@ our_code_starts_here:
 }
 ```
 
+### Testing our compiler
+
 Then we can write tests like this `add.snek`:
 
 ```console
@@ -666,12 +711,10 @@ $ ./test/add.run
 This is, of course, a very simple language. This tutorial serves mainly to make
 us use all the pieces of infrastructure that we'll build on throughout the quarter:
 
-- An assembler (`nasm`) and a Rust main program (`runtime/start.rs`) to build
-  binaries
-- A definition of abstract syntax (`enum Expr`)
-- A parser for text (`parse` from the `sexp` crate) and a parser for our
-  abstract syntax (`parse_expr`)
-- A code generator (`compile_expr`) that generates assembly from `Expr`s
+1. An assembler (`nasm`) and a Rust main program (`runtime/start.rs`) to build binaries
+2. A definition of abstract syntax (`enum Expr`)
+3. A parser for text (`parse` from the `sexp` crate) and a parser for our abstract syntax (`parse_expr`)
+4. A code generator (`compile_expr`) that generates assembly from `Expr`s
 
 Most of our future assignments will be built from just these pieces, plus extra
 infrastructure added as we need it.

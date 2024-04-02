@@ -38,8 +38,8 @@ course, as well as the syllabus.
 - **Discussion:** *CENTER 212* Fr 2:00-2:50pm
 - **Exams:** *(In Friday Discussion Section)* May 3 (Week 5), May 31 (Week 9)
 - **Final Exam:** *(Optional, to make up exam credit)* Tue June 11, 3:00-6:00pm (CENTER 105)
-- Podcasts: [podcast.ucsd.edu](https://podcast.ucsd.edu/watch/sp23/cse131cse231_a00)
-- Q&A Forum: [EdStem](https://edstem.org/us/courses/38748)
+- Podcasts: [podcast.ucsd.edu](https://podcast.ucsd.edu/watch/sp24/cse231_a00)
+- Q&A Forum: [Piazza](https://piazza.com/ucsd/spring2024/cse231)
 - Gradescope: [https://www.gradescope.com](https://www.gradescope.com)
 
 ## Resources
@@ -67,30 +67,33 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
 
 ### Week 1 - Rust and Source to Assembly Conversion
 
-- [Assignment (due Tuesday, April 11, 10pm)](./week1/index.md)
+- [Assignment (due Friday, April 5, 23:59:59)](./week1/index.md) 
+- [Assignment on Github Classroom](https://classroom.github.com/a/8_IhC3V5)
 - Reading and resources:
-  - Friday Handout: [(pdf)](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
-  - Wednesday Handout: [(pdf)](https://drive.google.com/file/d/1WgOu07dQTGT9NXzGqnDUHDprMRq5btRn/view?usp=sharing) [(pptx)](https://docs.google.com/presentation/d/1QO22FXOAui0fT_2zbixQh6cwFzWEz2pi-2RRU4EuLBI/edit?usp=share_link) [(code)](https://github.com/ucsd-compilers-s23/lecture1)
-  - [Monday Handout](https://drive.google.com/file/d/1AOZ-MRYc1DYdbBlz6xkMrETaeCfHujZI/view?usp=share_link)
+  - [Tue 4/1 Handout](https://drive.google.com/file/d/1AOZ-MRYc1DYdbBlz6xkMrETaeCfHujZI/view?usp=share_link) 
+  <!--
+  - Tue Handout: [(pdf)](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
+  - Thu Handout: [(pdf)](https://drive.google.com/file/d/1WgOu07dQTGT9NXzGqnDUHDprMRq5btRn/view?usp=sharing) [(pptx)](https://docs.google.com/presentation/d/1QO22FXOAui0fT_2zbixQh6cwFzWEz2pi-2RRU4EuLBI/edit?usp=share_link) [(code)](https://github.com/ucsd-compilers-s23/lecture1)
+  -->
+
   - [Rust Book Chapters 1-6](https://doc.rust-lang.org/book)
   - [x86-64 quick reference (Stanford)](https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/guide/x86-64.html)
   - [x86-64 quick reference (Brown)](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
 
 ## Staff 
 
-**Office hours** are concentrated on Friday, Monday, and Tuesday, since most
-assignments are due Tuesday evening. Please check the calendar before you come
+**Office hours** are concentrated on Wed, Thu, Fri, since most
+assignments are due Friday evening. Please check the calendar before you come
 in case there have been any changes. When you come to the office hour, we may
 ask you to put your name in the queue using the whiteboard. Read the
 description about [collaboration below](#policies) for some context about
 office hours. The office hours schedule is below; each event has details about
 remote/in-person:
 
-TODO
 
 ## Grading
 
-Your grade will be calculated from **engagement**, **assignments**, and **exams**.
+Your grade will be calculated from  **assignments**, **exams**, **participation** and **quizzes**.
 
 **Assignments** are given periodically, typically at one or two week intervals.
 On each you'll get a score from 0-3 (Incomplete/No Pass, Low Pass, Pass, High Pass).
@@ -100,11 +103,11 @@ in the Friday discussion sections. Tests also get a score from 0-3. Finals week
 and the usual final exam block will give an opportunity to make up credit on
 these if you miss them or get low scores.
 
-**Engagement** has two components – class participation and weekly (p)review
-quizzes. Most lectures will come with a 1-2 page handout, and you can submit
+For the **participation** credit, most lectures will come with a 1-2 page handout, and you can submit
 the handout any time up until the start of the next lecture. Credit is given
 for reasonable effort in engaging with the notes from the day on the handout.
-Quizzes will release each week around Wednesday, and be due Sunday evening.
+
+**Quizzes** will release each week around Wednesday, and be due Sunday evening.
 These serve as a review of the past week and a preview of the coming week.
 
 The standards for grade levels are:
@@ -233,11 +236,10 @@ There are two types of assignments in this course:
 You can always use code from class or shared by the instructional team
 (properly attributed).
 
-Programming assignments will explicitly list whether they are open or closed
-collaboration.
+Programming assignments will **explicitly list** whether they are open 
+or closed collaboration.
 
-You should be familiar with [the UCSD
-guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
+You should be familiar with [the UCSD guidelines](http://senate.ucsd.edu/Operating-Procedures/Senate-Manual/Appendices/2)
 on academic integrity as well.
 
 ### Late Work
