@@ -114,7 +114,7 @@ This file says:
   doesn't and cannot check that `our_code_starts_here` actually takes no
   arguments and returns an integer; it's trusting us, the programmer, to ensure
   that, which is `unsafe` from its point of view. The `unsafe` block lets us do
-  some kinds of operations that would otherwise by compile errors in Rust.
+  some kinds of operations that would otherwise be compile errors in Rust.
 - Then, print the result.
 
 Let's next see how to build a `libour_code` file out of some x86-64 assembly
@@ -134,7 +134,9 @@ Put this into a file called `test/31.s` if you like, to test things out (you
 should now have a `runtime/` and a `test/` directory that you created).
 
 We can create a standalone binary program that combines these with these
-commands (substitute `macho64` for `elf64` on OSX):
+commands (substitute `macho64` for `elf64` on OSX and if you're on an M1/M2
+machine change the invocation to `rustc --target x86_64-apple-darwin ...`.
+You may have to run `rustup target add x86_64-apple-darwin`):
 
 ```console
 $ nasm -f elf64 test/31.s -o runtime/our_code.o
@@ -290,7 +292,7 @@ test/%.s: test/%.snek src/main.rs
 	cargo run -- $< test/$*.s
 
 test/%.run: test/%.s runtime/start.rs
-	nasm -f macho64 test/$*.s -o runtime/our_code.o
+	nasm -f elf64 test/$*.s -o runtime/our_code.o
 	ar rcs runtime/libour_code.a runtime/our_code.o
 	rustc -L runtime/ runtime/start.rs -o test/$*.run
 ```
@@ -412,7 +414,7 @@ Here are some examples of Adder programs:
 **Abstract Syntax**
 
 ```rust
-Add1(Box::new(Sub1(Box::new(Number(5)))))
+Add1(Box::new(Sub1(Box::new(Num(5)))))
 ```
 
 **Result**
@@ -432,7 +434,7 @@ Add1(Box::new(Sub1(Box::new(Number(5)))))
 **Abstract Syntax**
 
 ```rust
-Number(4)
+Num(4)
 ```
 
 **Result**
@@ -452,7 +454,7 @@ Number(4)
 **Abstract Syntax**
 
 ```rust
-Negate(Add1(Number(3)))
+Negate(Box::new(Add1(Box::new(Num(3)))))
 ```
 
 **Result**
@@ -707,6 +709,9 @@ sub rax, 1
 $ ./test/add.run
 72
 ```
+
+Note: `make test/add.run` may delete `test/add.s` as an intermediate file.
+If so, run `make test/add.s` before running `cat test/add.s`.
 
 This is, of course, a very simple language. This tutorial serves mainly to make
 us use all the pieces of infrastructure that we'll build on throughout the quarter:
