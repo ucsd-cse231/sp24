@@ -78,11 +78,7 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
 - [Assignment on Github Classroom](https://classroom.github.com/a/8_IhC3V5)
 - Reading and resources:
   - [Tue 4/1 Handout](https://drive.google.com/file/d/1AOZ-MRYc1DYdbBlz6xkMrETaeCfHujZI/view?usp=share_link) 
-  <!--
-  - Tue Handout: [(pdf)](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
-  - Thu Handout: [(pdf)](https://drive.google.com/file/d/1WgOu07dQTGT9NXzGqnDUHDprMRq5btRn/view?usp=sharing) [(pptx)](https://docs.google.com/presentation/d/1QO22FXOAui0fT_2zbixQh6cwFzWEz2pi-2RRU4EuLBI/edit?usp=share_link) [(code)](https://github.com/ucsd-compilers-s23/lecture1)
-  -->
-
+  - [Thu 4/3 Handout](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
   - [Rust Book Chapters 1-6](https://doc.rust-lang.org/book)
   - [x86-64 quick reference (Stanford)](https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/guide/x86-64.html)
   - [x86-64 quick reference (Brown)](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
