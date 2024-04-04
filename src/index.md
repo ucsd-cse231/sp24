@@ -42,6 +42,13 @@ course, as well as the syllabus.
 - Q&A Forum: [Piazza](https://piazza.com/ucsd/spring2024/cse231)
 - Gradescope: [https://www.gradescope.com](https://www.gradescope.com)
 
+## Office Hours
+
+- Michael (Fri 4pm - 5pm in CSE 3217)
+- Nico    (Thu 10am-11am https://ucsd.zoom.us/j/98350873892, Fri 10am-11am CSE 240A)
+- Matt    (Wed 10am-12pm https://ucsd.zoom.us/j/2499498988)
+
+
 ## Resources
 
 Textbook/readings: There's no official textbook, but we will link to
