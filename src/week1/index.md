@@ -735,7 +735,10 @@ examples by using `cat` on a source `snek` file, then showing `make` running,
 using `cat` on the resulting `.s` file, and then running the resulting binary.
 Copy this interactino into a file called `transcript.txt`
 
-Hand in your entire repository to the `assignment-1-tutorial` assignment on
-Gradescope. There is no automated grading for this assignment; we want you to
+Hand in your entire repository to the `01-adder` assignment on `github`.
+
+**That is you only need to commit and push your cloned assignment**
+
+There is no automated grading for this assignment; we want you to
 practice gaining your own confidence that your solution works (and
 demonstrating that to us).
