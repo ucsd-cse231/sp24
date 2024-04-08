@@ -1,6 +1,6 @@
 ![boa](./boa.jpg)
 
-# Week 2: Boa, Due Tuesday, April 18 (Open Collaboration)
+# Week 2: Boa, Due Tuesday, April 12 (Open Collaboration)
 
 In this assignment you'll implement a compiler for a small language called Boa,
 that has let bindings and binary operators. The key difference between this
@@ -10,11 +10,9 @@ where we fill in exact behavior.
 
 ## Setup
 
-Get the assignment at <https://classroom.github.com/a/1bvTt9dk>. This will make a
-private-to-you copy of the repository hosted within the course's
-organization. You can also access the public starter code [directly from this
-public URL](https://github.com/ucsd-compilers-s23/boa-starter) if you don't have
-or prefer not to use a Github account.
+Get the assignment at <https://classroom.github.com/a/P5qpkKKh>. 
+This will make a private-to-you copy of the repository hosted within the course's
+organization. 
 
 ## The Boa Language
 
@@ -59,27 +57,8 @@ nicely readable.)
 
 The abstract syntax of Boa is a Rust `enum`. Note that this
 representation is different from what we used in
-[Adder](https://ucsd-compilers-s23.github.io/week1/index.html).
+[Adder](https://ucsd-cse231.github.io/sp24/week1/index.html).
 
-<!--- previous ocaml types
-```
-type prim1 =
-  | Add1
-  | Sub1
-
-type prim2 =
-  | Plus
-  | Minus
-  | Times
-
-type expr =
-  | Number of int
-  | Id of string
-  | Let of (string * expr) list * expr
-  | Prim1 of prim1 * expr
-  | Prim2 of prim2 * expr * expr
-```
- --->
 
 ```
 enum Op1 {
@@ -243,6 +222,7 @@ The parser will be given a S-expression representing the whole program, and
 must build a AST of the `Expr` data type from this S-expression.
 
 An S-expression in Rust is of the following type:
+
 ```
 pub enum Sexp {
     Atom(Atom),
@@ -535,14 +515,14 @@ create a system in this style, and showcase some unique features it enables.
 
 These extensions are not required, nor are they graded. However, we'd be
 delighted to hear about what you're trying for them in office hours, see what
-you've done, and give feedback on them. Joe and the staff have done a little
+you've done, and give feedback on them. The staff have done a little
 bit of work to proof-of-concept some of this, but you'll be largely on your
 own and things aren't guaranteed to be obviously possible.
 
 The primary tool we think is particularly useful here is
 [dynasm](https://censoredusername.github.io/dynasm-rs/language/index.html).
 (You might also find [assembler](https://crates.io/crates/assembler) useful,
-but it hasn't been updated in a while and `dynasm` was what Joe found easiest
+but it hasn't been updated in a while and `dynasm` was what we found easiest
 to use). The basic idea is that `dynasm` provides Rust macros that build up a
 vector of bytes representing machine instructions. References to these vectors
 can be cast using
