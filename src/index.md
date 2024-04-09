@@ -76,12 +76,29 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
 
 - [Assignment (due Friday, April 12, 11:59pm)](./week2/index.md)
 - [Assignment on Github Classroom](https://classroom.github.com/a/P5qpkKKh)
-- Handouts
-  - Monday Handout: [(pdf)](https://drive.google.com/open?id=1-6vUpvSapNiC2KsKigUnU2bKi_YFAQ7c&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/1-93ApFcsJpvs8cZI_0160pfjjVEmWj_8?rtpof=true&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(code)](https://github.com/ucsd-compilers-s23/lecture1/tree/cobra)
-- Reading and Resources:
-  - [Max New on Conditionals](https://maxsnew.com/teaching/eecs-483-fa21/lec_if_notes.html)
-  - [Mark Barbone on x86_64 calling convention](https://markis.cool/posts/2023-04-17-sysv-abi.html)
-  - [Wikipedia on x86_64 calling convention](https://en.wikipedia.org/wiki/X86_calling_conventions#System_V_AMD64_ABI)
+- Handouts:
+  - Tue Handout: [(pdf)](static/week2_tue.pdf)
+<!--
+  - Monday Handout: [(pdf)](https://drive.google.com/file/d/15xYXbx9VVfXv9-xuKqH8lcMLKt8gP4cu/view?usp=share_link)
+    [(pptx)](https://docs.google.com/presentation/d/1i3Mf3UVZoHmXJy3RhHpa4WMgt_M-MD38/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
+  - Wednesday Handout: [(pdf)](https://drive.google.com/open?id=1pyn-5AhrBKH4nE4V4g3VWKDD-HM9J3R5&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/14c0AVN8LQH3_JH6YswtJbjWYlPJTS9UC?rtpof=true&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(code)](https://github.com/ucsd-compilers-s23/lecture1/tree/lecture3)
+  - Friday Handout: [(pdf)](https://drive.google.com/open?id=1--oHIGna7kRj0w7yYmtHYsX7Iprjhvj1&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/1--VHG_NpiO_CF6OUlksf-G3a4EJ9yNnp?rtpof=true&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(filled)](https://drive.google.com/open?id=1-1p5EQoMrJ4iLgXgsHaXLOUOnbuSP-TX&authuser=jpolitz%40ucsd.edu&usp=drive_fs)
+  -->
+
+- Reading and resources:
+  - [Memory Representation of Values in Ocaml](https://dev.realworldocaml.org/runtime-memory-layout.html)
+    _More discussion of a language with tagged value representations (and Ocaml
+    is type-checked!)._
+  - [V8 Blog Post Including Number Representations](https://v8.dev/blog/pointer-compression)
+    _This goes a little further than we are right now, but focus on the fact
+    that V8, one of the widely deployed JS engines, uses tag bits for
+    its numbers._
+  - [Max New on Let and the Stack](https://maxsnew.com/teaching/eecs-483-fa21/lec_let-and-stack_notes.html)
+    _Max New and Ben Lerner have done a nice job writing up notes on let-bindings and the stack. 
+    They don't use exactly the same style or make the same decisions as CSE231, but things are
+    close enough to be useful._
+
+
 
 
 ### Week 1 - Rust and Source to Assembly Conversion
@@ -91,6 +108,7 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
 - Reading and resources:
   - [Tue 4/1 Handout](https://drive.google.com/file/d/1AOZ-MRYc1DYdbBlz6xkMrETaeCfHujZI/view?usp=share_link) 
   - [Thu 4/3 Handout](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
+  - [Week 1 markup](./week1.pdf)
   - [Rust Book Chapters 1-6](https://doc.rust-lang.org/book)
   - [x86-64 quick reference (Stanford)](https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/guide/x86-64.html)
   - [x86-64 quick reference (Brown)](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
