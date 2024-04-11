@@ -77,13 +77,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 - [Assignment on Github Classroom](https://classroom.github.com/a/P5qpkKKh)
 - Handouts:
   - Tue Handout: [(pdf)](static/week2_tue.pdf)
-<!--
-  - Monday Handout: [(pdf)](https://drive.google.com/file/d/15xYXbx9VVfXv9-xuKqH8lcMLKt8gP4cu/view?usp=share_link)
-    [(pptx)](https://docs.google.com/presentation/d/1i3Mf3UVZoHmXJy3RhHpa4WMgt_M-MD38/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
-  - Wednesday Handout: [(pdf)](https://drive.google.com/open?id=1pyn-5AhrBKH4nE4V4g3VWKDD-HM9J3R5&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/14c0AVN8LQH3_JH6YswtJbjWYlPJTS9UC?rtpof=true&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(code)](https://github.com/ucsd-compilers-s23/lecture1/tree/lecture3)
-  - Friday Handout: [(pdf)](https://drive.google.com/open?id=1--oHIGna7kRj0w7yYmtHYsX7Iprjhvj1&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/1--VHG_NpiO_CF6OUlksf-G3a4EJ9yNnp?rtpof=true&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(filled)](https://drive.google.com/open?id=1-1p5EQoMrJ4iLgXgsHaXLOUOnbuSP-TX&authuser=jpolitz%40ucsd.edu&usp=drive_fs)
-  -->
-
+  - Thu Handout: [(pdf)](static/week2_thu.pdf)
 - Reading and resources:
   - [Max New on Let and the Stack](https://maxsnew.com/teaching/eecs-483-fa21/lec_let-and-stack_notes.html)
     _Max New and Ben Lerner have done a nice job writing up notes on let-bindings and the stack. 
