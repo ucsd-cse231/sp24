@@ -69,8 +69,7 @@ The schedule below outlines topics, due dates, and links to assignments. The
 schedule of lecture topics might change slightly, but I post a general plan so
 you can know roughly where we are headed.
 
-The typical due dates are that **assignments** are due on Tuesday evenings and
-**quizzes** are due Friday evenings.
+The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
 ### Week 2 - Binary Operators, Booleans, and Conditionals
 
@@ -86,6 +85,10 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
   -->
 
 - Reading and resources:
+  - [Max New on Let and the Stack](https://maxsnew.com/teaching/eecs-483-fa21/lec_let-and-stack_notes.html)
+    _Max New and Ben Lerner have done a nice job writing up notes on let-bindings and the stack. 
+    They don't use exactly the same style or make the same decisions as CSE231, but things are
+    close enough to be useful._
   - [Memory Representation of Values in Ocaml](https://dev.realworldocaml.org/runtime-memory-layout.html)
     _More discussion of a language with tagged value representations (and Ocaml
     is type-checked!)._
@@ -93,13 +96,6 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
     _This goes a little further than we are right now, but focus on the fact
     that V8, one of the widely deployed JS engines, uses tag bits for
     its numbers._
-  - [Max New on Let and the Stack](https://maxsnew.com/teaching/eecs-483-fa21/lec_let-and-stack_notes.html)
-    _Max New and Ben Lerner have done a nice job writing up notes on let-bindings and the stack. 
-    They don't use exactly the same style or make the same decisions as CSE231, but things are
-    close enough to be useful._
-
-
-
 
 ### Week 1 - Rust and Source to Assembly Conversion
 
@@ -108,10 +104,11 @@ The typical due dates are that **assignments** are due on Tuesday evenings and
 - Reading and resources:
   - [Tue 4/1 Handout](https://drive.google.com/file/d/1AOZ-MRYc1DYdbBlz6xkMrETaeCfHujZI/view?usp=share_link) 
   - [Thu 4/3 Handout](https://drive.google.com/file/d/1eYTybBS3QNRYkhIbsEnPCHXGACMqEJ5p/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/1gGeC4Wp68sHLZLR6YbPAAdJk3NevdYcM/edit?usp=share_link&ouid=117453768726816085396&rtpof=true&sd=true)
-  - [Week 1 markup](./week1.pdf)
+  - [Week 1 markup](./static/week1.pdf)
   - [Rust Book Chapters 1-6](https://doc.rust-lang.org/book)
   - [x86-64 quick reference (Stanford)](https://web.stanford.edu/class/archive/cs/cs107/cs107.1196/guide/x86-64.html)
   - [x86-64 quick reference (Brown)](https://cs.brown.edu/courses/cs033/docs/guides/x64_cheatsheet.pdf)
+
 
 ## Staff 
 
