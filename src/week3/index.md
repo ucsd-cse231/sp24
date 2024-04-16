@@ -1,22 +1,18 @@
 ![cobra](./cobra.jpg)
 
-# Week 3: Cobra, Due Tuesday, April 25 (Open Collaboration)
-
-_(Yes, that's 3 open collaboration assignments in a row 🙂)_
+# Week 3: Cobra, Due Friday, April 26 (Open Collaboration)
 
 In this assignment you'll implement a compiler for a small language called Cobra,
 which extends Boa with booleans, conditionals, variable assignment, and loops.
 
 ## Setup
 
-Get the assignment at <https://classroom.github.com/a/mHUq5XJd> This will make
-a private-to-you copy of the repository hosted within the course's
-organization.  You can also access the public starter code
-<https://github.com/ucsd-compilers-s23/cobra-starter> if you don't have or
-prefer not to use a Github account.
+
+Get the assignment at <https://classroom.github.com/a/tnyP6D51>
+This will make a private-to-you copy of the repository hosted within the course's
+organization.  
 
 ## The Cobra Language
-
 
 ### Concrete Syntax
 
@@ -212,25 +208,25 @@ This program calculates the factorial of the input.
 
 ### Implementing a Compiler for Cobra
 
-The [starter code](https://github.com/ucsd-compilers-s23/cobra-starter) makes a
+The [starter code](https://github.com/ucsd-cse231/03-cobra) makes a
 few infrastructural suggestions. You can change these as you feel is
 appropriate in order to meet the specification.
 
 #### Reporting Dynamic Errors
 
 We've provided some infrastructure for reporting errors via the
-[`snek_error`](https://github.com/ucsd-compilers-s23/cobra-starter/blob/main/runtime/start.rs#L13)
+[`snek_error`](https://github.com/ucsd-cse231/03-cobra/blob/main/runtime/start.rs#L13)
 function in `start.rs`. This is a function that can be _called from the
 generated program_ to report an error. for now we have it take an error code as
 an argument; you might find the error code useful for deciding which error
 message to print.  This is also listed as an `extern` in [the generated
 assembly startup
-code](https://github.com/ucsd-compilers-s23/cobra-starter/blob/main/src/main.rs#L17).
+code](https://github.com/ucsd-cse231/03-cobra/blob/main/src/main.rs#L17).
 
 #### Calculating Input
 
 We've provided a
-[`parse_input`](https://github.com/ucsd-compilers-s23/cobra-starter/blob/main/runtime/start.rs#L27)
+[`parse_input`](https://github.com/ucsd-cse231/03-cobra/blob/main/runtime/start.rs#L27)
 stub for you to fill in to turn the command-line argument to `start.rs` into a
 value suitable for passing to `our_code_starts_here`. As a reminder/reference,
 the first argument in the x86_64 calling convention is stored in `rdi`. This
@@ -252,7 +248,7 @@ behavior!)
 The test format changed slightly to require a _test name_ along with a _test
 file name_. This is to support using the same _test file_ with different
 _command line arguments_. You can see several of these in the [sample
-tests](https://github.com/ucsd-compilers-s23/cobra-starter/blob/main/tests/all_tests.rs).
+tests](https://github.com/ucsd-cse231/03-cobra/blob/main/tests/all_tests.rs).
 Note that providing `input` is optional. These also illustrate how to check for
 errors.
 
@@ -297,12 +293,12 @@ The initial version of the starter code contained an error in the testing infras
 cloned before we fixed it, you'll have to update the code. You can update the code by running:
 
 ```console
-git remote add upstream https://github.com/ucsd-compilers-s23/cobra-starter
+git remote add upstream https://github.com/ucsd-cse231/03-cobra
 git pull upstream main --allow-unrelated-histories
 ```
 
 This will merge all commits from the template into your repository. Alternatively, you can also
-clone <https://github.com/ucsd-compilers-s23/cobra-starter> and manually replace your `tests/`
+clone <https://github.com/ucsd-cse231/03-cobra> and manually replace your `tests/`
 directory.
 
 ## Extension: Using Dynamic Information to Optimize
