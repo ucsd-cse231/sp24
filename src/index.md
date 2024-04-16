@@ -71,6 +71,12 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 3 - Tags, Conditionals, and Loops
+
+- [Assignment (due Friday, April 26)](./week3/index.md)
+- [Assignment on Github Classroom](https://classroom.github.com/a/tnyP6D51)
+
+
 ### Week 2 - Binary Operators, Booleans, and Conditionals
 
 - [Assignment (due Friday, April 12, 11:59pm)](./week2/index.md)
