@@ -114,6 +114,10 @@ code (`std::process::exit(N)` for nonzero `N` in Rust works well for this).
   subexpression and the resulting value becomes the result of the entire loop.
   Typically the body of a loop is written with `block` to get a sequence of
   expressions in the loop body.
+- `isnum` and `isbool` are primitive operations that **test** their argument's type;
+  `isnum(v)` evaluates to `true` if `v` is a number and `false` otherwise, and 
+  `isbool(v)` evaluates to `true` if `v` is a boolean and `false` otherwise.
+
 
 There are several examples further down to make this concrete.
 
