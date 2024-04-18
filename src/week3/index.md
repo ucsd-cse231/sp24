@@ -61,6 +61,7 @@ enum Expr {
     Let(Vec<(String, Expr)>, Box<Expr>),
     UnOp(Op1, Box<Expr>),
     BinOp(Op2, Box<Expr>, Box<Expr>),
+    Input,
     If(Box<Expr>, Box<Expr>, Box<Expr>),
     Loop(Box<Expr>),
     Break(Box<Expr>),
