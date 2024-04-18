@@ -76,6 +76,18 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 
 - [Assignment (due Friday, April 26)](./week3/index.md)
 - [Assignment on Github Classroom](https://classroom.github.com/a/tnyP6D51)
+- Handouts:
+  - Thu Handout: [(pdf)](static/week3_thu.pdf)
+
+- Reading and resources:
+  - [Memory Representation of Values in Ocaml](https://dev.realworldocaml.org/runtime-memory-layout.html)
+    _More discussion of a language with tagged value representations (and Ocaml
+    is type-checked!)._
+  - [V8 Blog Post Including Number Representations](https://v8.dev/blog/pointer-compression)
+    _This goes a little further than we are right now, but focus on the fact
+    that V8, one of the widely deployed JS engines, uses tag bits for
+    its numbers._
+
 
 
 ### Week 2 - Binary Operators, Booleans, and Conditionals
@@ -90,13 +102,6 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
     _Max New and Ben Lerner have done a nice job writing up notes on let-bindings and the stack. 
     They don't use exactly the same style or make the same decisions as CSE231, but things are
     close enough to be useful._
-  - [Memory Representation of Values in Ocaml](https://dev.realworldocaml.org/runtime-memory-layout.html)
-    _More discussion of a language with tagged value representations (and Ocaml
-    is type-checked!)._
-  - [V8 Blog Post Including Number Representations](https://v8.dev/blog/pointer-compression)
-    _This goes a little further than we are right now, but focus on the fact
-    that V8, one of the widely deployed JS engines, uses tag bits for
-    its numbers._
 
 ### Week 1 - Rust and Source to Assembly Conversion
 
