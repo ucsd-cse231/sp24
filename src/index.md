@@ -44,6 +44,7 @@ course, as well as the syllabus.
 
 ## Office Hours
 
+- Ranjit  (Thu 1pm - 2pm in CSE 3110)
 - Michael (Fri 4pm - 5pm in CSE 3217)
 - Nico    (Thu 10am-11am https://ucsd.zoom.us/j/98350873892, Fri 10am-11am CSE 240A)
 - Matt    (Wed 10am-12pm https://ucsd.zoom.us/j/2499498988)
