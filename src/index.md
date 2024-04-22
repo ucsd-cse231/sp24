@@ -72,12 +72,16 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+
+
+
 ### Week 3 - Tags, Conditionals, and Loops
 
 - [Assignment (due Friday, April 26)](./week3/index.md)
 - [Assignment on Github Classroom](https://classroom.github.com/a/tnyP6D51)
 - Handouts:
   - Thu Handout: [(pdf)](static/week3_thu.pdf)
+- [Lecture code](https://github.com/ucsd-cse231/sp24-code/tree/main/stash)
 
 - Reading and resources:
   - [Memory Representation of Values in Ocaml](https://dev.realworldocaml.org/runtime-memory-layout.html)
