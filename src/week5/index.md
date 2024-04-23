@@ -1,20 +1,17 @@
 ![diamondback](./diamondback.jpeg)
 
-# Week 5: Diamondback, Due Thursday, May 11 (Closed Collaboration)
+# Week 5: Diamondback, Due Friday, May 3 (Closed Collaboration)
 
 In this assignment you'll implement a compiler for a language called Diamondback,
 which has top-level function definitions.
 
-This assignment is [**closed to
-collaboration**](https://ucsd-compilers-s23.github.io/#programming).
+This assignment is [**closed to collaboration**](https://ucsd-compilers-s23.github.io/#programming).
 
 ## Setup
 
 Get the assignment at <https://classroom.github.com/a/q383lTNN> This will make
 a private-to-you copy of the repository hosted within the course's
-organization.  You can also access the public starter code
-<https://github.com/ucsd-compilers-s23/diamondback-starter> if you don't have
-or prefer not to use a Github account.
+organization.  
 
 ## The Diamondback Language
 
