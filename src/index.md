@@ -76,7 +76,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 
 - [Assignment (due Friday, May 3, 11:59pm)](./week5/index.md)
 - Handouts and recordings:
-  - Tuesday Handout: [(pdf)](static/week4_tue.pdf)
+  - Tuesday Handout: [(pdf)](static/week4.pdf)
 - Reading and Resources:
   - [Lerner/New on Errors](https://maxsnew.com/teaching/eecs-483-fa21/lec_function-calls_notes.html)
   - [Lerner/New on Defining Functions](https://maxsnew.com/teaching/eecs-483-fa21/lec_function-defs_notes.html)
