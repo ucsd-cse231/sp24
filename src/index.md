@@ -76,8 +76,10 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 
 - [Assignment (due Friday, May 3, 11:59pm)](./week5/index.md)
 - Handouts and recordings:
-  - Tuesday Handout: [(pdf)](static/week4.pdf)
+  - Tuesday Handout: [(pdf)](static/week4_tue.pdf)
+  - Thursday Handout: [(pdf)](static/week4_thu.pdf)
   - Tuesday Recording: [(zoom)](https://ucsd.zoom.us/rec/share/B6PZ8Og6_hnWJ5mv9c232IaKPCWPsXtti0NtbWrCRDZIGcevJ5em65V5rL9uAUQ.42IkB_gJxjduelB9?startTime=1713906037000)
+  - Thursday Recording: [(zoom)](https://ucsd.zoom.us/rec/share/7Wkp-iK8NWqKtEgJkOAK-oi_ShHw2JkMbO5jnwhZww9MwP6blg-tqfX-DfXuqLU.dice5Prr-fRj0qel)
 
 - Reading and Resources:
   - [Lerner/New on Errors](https://maxsnew.com/teaching/eecs-483-fa21/lec_function-calls_notes.html)
