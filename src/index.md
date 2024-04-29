@@ -75,6 +75,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 ### Week 4 - Functions and Calling Conventions
 
 - [Assignment (due Friday, May 3, 11:59pm)](./week5/index.md)
+- [Assignment on Github Classroom](https://classroom.github.com/a/20qeISvT)
 - Handouts and recordings:
   - Tuesday Handout: [(pdf)](static/week4_tue.pdf)
   - Thursday Handout: [(pdf)](static/week4_thu.pdf)
