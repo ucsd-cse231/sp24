@@ -9,8 +9,9 @@ This assignment is [**closed to collaboration**](https://ucsd-compilers-s23.gith
 
 ## Setup
 
-Get the assignment at <https://classroom.github.com/a/q383lTNN> This will make
-a private-to-you copy of the repository hosted within the course's
+
+Get the assignment at <https://classroom.github.com/a/20qeISvT>
+This will make a private-to-you copy of the repository hosted within the course's
 organization.  
 
 ## The Diamondback Language
