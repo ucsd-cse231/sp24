@@ -347,7 +347,9 @@ Some past exams are available at the link below for reference on format
 (content changes from offering to offering so this may not be
 representative):
 
-<https://drive.google.com/drive/folders/1yPxZ-nqRpC9Gz63JIavhQgfnyhA0uGIs?usp=sharing>
+- [sample exam 1](static/compilers-sample-exam-1.pdf)
+- [sample exam 2](static/compilers-sample-exam-2.pdf)
+- <https://drive.google.com/drive/folders/1yPxZ-nqRpC9Gz63JIavhQgfnyhA0uGIs?usp=sharing>
 
 ### Laptop/Device Policy in Lecture
 
