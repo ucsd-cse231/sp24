@@ -133,6 +133,13 @@ Here are some examples of Diamondback programs.
 )
 ```
 
+### Proper Tail Calls
+
+Implement safe-for-space tail calls for Diamondback. Test with deeply-nested
+recursion. To make sure you've tested _proper tail calls_ and not just _tail
+recursion_, test deeply-nested mutual recursion between functions with
+different numbers of arguments.
+
 ### Implementing a Compiler for Diamondback
 
 The main new feature in Diamondback is functions. You should choose and
@@ -171,14 +178,7 @@ example, you _could_ try to calculate the answer for these programs and
 generate a single `mov` instruction: don't do that, it doesn't demonstrate the
 learning outcomes we care about.
 
-## Extension 1: Proper Tail Calls
-
-Implement safe-for-space tail calls for Diamondback. Test with deeply-nested
-recursion. To make sure you've tested _proper tail calls_ and not just _tail
-recursion_, test deeply-nested mutual recursion between functions with
-different numbers of arguments.
-
-## Extension 2: Add Function Definitions to the REPL
+## Extension 1: Add Function Definitions to the REPL
 
 Add the ability to define functions to the REPL. Entries should be a definition
 (which could be `define` or `fun`) or an expression.
@@ -186,7 +186,7 @@ Add the ability to define functions to the REPL. Entries should be a definition
 Functions should be able to use global variables `define`d in earlier entries
 in the function body.
 
-## Extension 3: Compiling Functions with Dynamically-Discovered Types
+## Extension 2: Compiling Functions with Dynamically-Discovered Types
 
 Consider a function like this one from class:
 

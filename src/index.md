@@ -72,6 +72,14 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 5 - Tail Calls and the Heap
+
+- Handouts
+    - Tuesday Handout: [(pdf)](static/week5_tue.pdf)
+
+- Reading and Resources
+  - [Lerner on Tail Calls](https://course.ccs.neu.edu/cs4410sp20/lec_tail-calls_stack_notes.html)
+
 ### Week 4 - Functions and Calling Conventions
 
 - [Assignment (due Friday, May 3, 11:59pm)](./week5/index.md)
@@ -85,7 +93,6 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 - Reading and Resources:
   - [Lerner/New on Errors](https://maxsnew.com/teaching/eecs-483-fa21/lec_function-calls_notes.html)
   - [Lerner/New on Defining Functions](https://maxsnew.com/teaching/eecs-483-fa21/lec_function-defs_notes.html)
-  - [Lerner on Tail Calls](https://course.ccs.neu.edu/cs4410sp20/lec_tail-calls_stack_notes.html)
 
 
 ### Week 3 - Tags, Conditionals, and Loops
