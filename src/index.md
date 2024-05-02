@@ -75,7 +75,8 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 ### Week 5 - Tail Calls and the Heap
 
 - Handouts
-    - Tuesday Handout: [(pdf)](static/week5_tue.pdf)
+    - Tuesday Handout: [(pdf)](static/week5_tue.pdf), [(annot-pdf)](static/week5_tue_annot.pdf)
+    - Thursday Handout: [(pdf)](static/week5_thu.pdf)
 
 - Reading and Resources
   - [Lerner on Tail Calls](https://course.ccs.neu.edu/cs4410sp20/lec_tail-calls_stack_notes.html)
@@ -87,6 +88,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 - Handouts and recordings:
   - Tuesday Handout: [(pdf)](static/week4_tue.pdf)
   - Thursday Handout: [(pdf)](static/week4_thu.pdf)
+  - Filled out [(pdf)](static/week4_annot.pdf)
   - Tuesday Recording: [(zoom)](https://ucsd.zoom.us/rec/share/B6PZ8Og6_hnWJ5mv9c232IaKPCWPsXtti0NtbWrCRDZIGcevJ5em65V5rL9uAUQ.42IkB_gJxjduelB9?startTime=1713906037000)
   - Thursday Recording: [(zoom)](https://ucsd.zoom.us/rec/share/7Wkp-iK8NWqKtEgJkOAK-oi_ShHw2JkMbO5jnwhZww9MwP6blg-tqfX-DfXuqLU.dice5Prr-fRj0qel)
 
