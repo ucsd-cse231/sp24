@@ -351,7 +351,9 @@ representative):
 
 - [sample exam 1](static/compilers-sample-exam-1.pdf)
 - [sample exam 2](static/compilers-sample-exam-2.pdf)
-- <https://drive.google.com/drive/folders/1yPxZ-nqRpC9Gz63JIavhQgfnyhA0uGIs?usp=sharing>
+- [sample exam 3](static/compilers-sample-exam-3.pdf)
+- [sample exam 4](static/compilers-sample-exam-4.pdf)
+- [x86 reference](static/x86-reference.pdf)
 
 ### Laptop/Device Policy in Lecture
 
