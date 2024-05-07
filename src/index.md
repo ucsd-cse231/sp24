@@ -75,6 +75,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 ### Week 6 - Closures
 
 - Handouts:
+    - Tuesday Handout: [(pdf)](static/week6_tue.pdf)
 <!--
   - Monday Handout: [(pdf)](https://drive.google.com/file/d/10N6pBYMXlmNcj44ZG0lfE7R2TUu76Rtk/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/10CQguVrO_CsM5tRdB-s6P1uG8k4j_lhD/edit?usp=share_link&ouid=108036649104448650609&rtpof=true&sd=true) [(filled)](https://drive.google.com/file/d/1WtEB0rxFsUcKT38s3VQBsY_XMs7wpUeR/view?usp=share_link)
   - Wednesday Handout: [(pdf)](https://drive.google.com/open?id=10Oi5eDSom0ooIZh6544saNasxVrEbFaX&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/1-jBhVNii45-dd0HwwTh_AZueaecoYlGE/edit?usp=share_link&ouid=105656546547059517622&rtpof=true&sd=true)
