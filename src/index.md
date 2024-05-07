@@ -72,7 +72,29 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 6 - Closures
+
+- Handouts:
+<!--
+  - Monday Handout: [(pdf)](https://drive.google.com/file/d/10N6pBYMXlmNcj44ZG0lfE7R2TUu76Rtk/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/10CQguVrO_CsM5tRdB-s6P1uG8k4j_lhD/edit?usp=share_link&ouid=108036649104448650609&rtpof=true&sd=true) [(filled)](https://drive.google.com/file/d/1WtEB0rxFsUcKT38s3VQBsY_XMs7wpUeR/view?usp=share_link)
+  - Wednesday Handout: [(pdf)](https://drive.google.com/open?id=10Oi5eDSom0ooIZh6544saNasxVrEbFaX&authuser=jpolitz%40ucsd.edu&usp=drive_fs) [(pptx)](https://docs.google.com/presentation/d/1-jBhVNii45-dd0HwwTh_AZueaecoYlGE/edit?usp=share_link&ouid=105656546547059517622&rtpof=true&sd=true)
+  - Friday Handout: [(pdf)](https://drive.google.com/open?id=10cELq6XOarsRYQcnNBSnHl-72FoARbZc&authuser=jpolitz%40ucsd.edu&usp=drive_fs)[(pptx)](https://docs.google.com/presentation/d/10c2RfDK5E8qLacnqZ9np0JhpVU5vHhiI/edit?usp=share_link&ouid=105656546547059517622&rtpof=true&sd=true) [(filled)](https://drive.google.com/file/d/1Fir7zmXnfBWDUKhxTLS4WnjAAFWatXgc/view?usp=share_link)
+ -->
+
+- Reading and Resources
+  - [Pairs Implementation](https://github.com/ucsd-cse231/sp24-code/tree/main/stash/week5-get)
+  - [New/Lerner on Pairs and Tuples](https://maxsnew.com/teaching/eecs-483-fa21/lec_tuples_notes.html)
+  - [New on Lambdas](https://maxsnew.com/teaching/eecs-483-fa21/lec_lambdas_notes.html)
+
+<!--
+  - [New/Lerner on Mutable Tuples](https://maxsnew.com/teaching/eecs-483-fa21/lec_mutable-tuples_notes.html)
+  - [New/Lerner on Garbage](https://maxsnew.com/teaching/eecs-483-fa21/gc.pdf)
+ -->
+
 ### Week 5 - Tail Calls and the Heap
+
+- [Assignment (due Friday, May 17, 11:59pm)](./week6/index.md)
+- [Assignment on Github Classroom](https://classroom.github.com/a/RMPc8WTT)
 
 - Handouts
     - Tuesday Handout: [(pdf)](static/week5_tue.pdf), [(annot-pdf)](static/week5_tue_annot.pdf)
