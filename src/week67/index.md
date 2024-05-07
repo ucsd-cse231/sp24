@@ -1,6 +1,6 @@
 ![egg-eater](./egg-eater.jpg)
 
-# Week 6-7: Egg Eater, Due Friday, May 17 (Open Collaboration)
+# Week 6-7: Egg Eater, Due Friday, May 13 (Open Collaboration)
 
 In this assignment you'll implement _heap allocated structures_ in your
 compiler.
