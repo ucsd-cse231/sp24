@@ -75,8 +75,8 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 ### Week 6 - Closures
 
 - Handouts:
-    - Tuesday Handout: [(pdf)](static/week6_tue.pdf)
-    - Thursday Handout: [(pdf)](static/week6_thu.pdf)
+    - Tuesday Handout: [(pdf)](static/week6_tue.pdf) [(annot)](static/week6_tue_annot.pdf)
+    - Thursday Handout: [(pdf)](static/week6_thu.pdf)[(annot)](static/week6_thu_annot.pdf)
 
 <!--
   - Monday Handout: [(pdf)](https://drive.google.com/file/d/10N6pBYMXlmNcj44ZG0lfE7R2TUu76Rtk/view?usp=share_link) [(pptx)](https://docs.google.com/presentation/d/10CQguVrO_CsM5tRdB-s6P1uG8k4j_lhD/edit?usp=share_link&ouid=108036649104448650609&rtpof=true&sd=true) [(filled)](https://drive.google.com/file/d/1WtEB0rxFsUcKT38s3VQBsY_XMs7wpUeR/view?usp=share_link)
