@@ -72,6 +72,11 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 8 - GC / Type Inference
+
+- [Assignment `fer-de-lance` due 5/24](https://classroom.github.com/a/RS24wn_3)
+
+
 ### Week 7 - Garbage Collection 
 
 - Handouts:
