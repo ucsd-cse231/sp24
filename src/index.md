@@ -76,6 +76,8 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 
 - [Assignment `fer-de-lance` due 5/24](https://classroom.github.com/a/RS24wn_3)
 
+- Handouts
+    - Tuesday Handout: [(pdf)](static/week8_tue.pdf) 
 
 ### Week 7 - Garbage Collection 
 
