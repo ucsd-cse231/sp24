@@ -1,11 +1,11 @@
-![forest-flame](./forest-flame.jpg)
+![gardener](https://cdn.britannica.com/15/220215-050-B1C41241/Common-Garter-Snake.jpg
 
-# Week 8-9: Forest Flame, Due Thursday, June 1st (Closed Collaboration)
+# Week 8-9: Gardener (Garbage Collection) Due Jun 3 (Closed Collaboration)
 
-In this assignment you'll implement garbage collection for a language called
-[Forest Flame], which uses our design for heap allocation.
+In this assignment you'll implement garbage collection for a language called 
+[Gardener] which uses our design for heap allocation.
 
-[Forest Flame]: https://en.wikipedia.org/wiki/Oxyrhopus_petolarius
+[Gardener](https://cdn.britannica.com/15/220215-050-B1C41241/Common-Garter-Snake.jpg
 
 ## Setup
 
@@ -13,7 +13,7 @@ For this assignment, you will (as in previous assignments) submit both a
 compiler and a runtime.
 
 Since garbage collection is a runtime feature, we provide a working
-Forest Flame compiler for you: ([github classroom], [public starter code]).
+Gardener compiler for you: ([github classroom], [public starter code]).
 If you use the starter code, you'll only have to modify the runtime.
 However, feel free to instead update your own Egg-Eater compiler to match the Forest
 Flame spec.
@@ -22,12 +22,9 @@ If you are participating in the Rust error study, please make sure you have the
 `build.rs` and `config.txt` files in the new repository and set a new `project`
 value in `config.txt` if you are using the starter code.
 
-[github classroom]: https://classroom.github.com/a/3zWbuK8d
-[public starter code]: https://github.com/ucsd-compilers-s23/forest-flame-starter
+## The Gardener Language
 
-## The Forest Flame Language
-
-The Forest Flame language extends Diamondback with heap allocation and garbage
+The Gardener language extends Diamondback with heap allocation and garbage
 collection.
 
 ### Concrete Syntax
@@ -71,12 +68,12 @@ The new pieces of syntax are `nil`, `gc`, `vec`, `make-vec`, `vec-get`,
 
 Additionally, it allows for any implementation-defined extra operations that
 start with `snek-`,
-which compilers for Forest Flame may implement or not as they like.
+which compilers for Gardener may implement or not as they like.
 The starter code implements a `(snek-printstack)` operation.
 
 ### Semantics
 
-Forest Flame adds the runtime type of *vectors*.
+Gardener adds the runtime type of *vectors*.
 A vector is either `nil` or a heap-allocated list of zero or more elements.
 
 It adds these new syntax constructs:
@@ -182,7 +179,7 @@ as described in lecture.
 
 ### Object layout
 
-A Forest Flame heap object has two metadata words, followed by the actual data.
+A Gardener heap object has two metadata words, followed by the actual data.
 
  - First, there is a GC word, used to store the mark bit and the forwarding
    pointer during garbage collection. Outside of garbage collection, the GC word
@@ -349,11 +346,11 @@ specific categories where we encourage you to share:
   representations of the heap + stack at various stages in garbage collection
   to understand examples
 
-Student Test Repo: <https://github.com/ucsd-compilers-s23/forest-flame-student-tests>
+Student Test Repo: <https://github.com/ucsd-cse231/gardener-student-tests>
 
 ## Extension: simple generational GC
 
-As discussed in lecture, nearly all modern garbage collectors take advantage of
+Nearly all modern garbage collectors take advantage of
 the high infant mortality rate for heap allocations, by segregating the heap
 into multiple *generations*, each of which stores data of a particular age, and
 processing the older generations less frequently than the younger generations.
