@@ -1,11 +1,9 @@
-![gardener](https://cdn.britannica.com/15/220215-050-B1C41241/Common-Garter-Snake.jpg
+![gardener](https://cdn.britannica.com/15/220215-050-B1C41241/Common-Garter-Snake.jpg)
 
 # Week 8-9: Gardener (Garbage Collection) Due Jun 3 (Closed Collaboration)
 
 In this assignment you'll implement garbage collection for a language called 
 [Gardener] which uses our design for heap allocation.
-
-[Gardener](https://cdn.britannica.com/15/220215-050-B1C41241/Common-Garter-Snake.jpg
 
 ## Setup
 
