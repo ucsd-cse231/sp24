@@ -3,26 +3,24 @@
 # Week 8-9: Gardener (Garbage Collection) Due Jun 3 (Closed Collaboration)
 
 In this assignment you'll implement garbage collection for a language called 
-[Gardener] which uses our design for heap allocation.
+`Gardener` which uses our design for heap allocation.
+
+**Starter Code in [github classroom](https://classroom.github.com/a/MJpCDHE7))**
 
 ## Setup
 
 For this assignment, you will (as in previous assignments) submit both a
 compiler and a runtime.
 
-Since garbage collection is a runtime feature, we provide a working
-Gardener compiler for you: ([github classroom], [public starter code]).
-If you use the starter code, you'll only have to modify the runtime.
-However, feel free to instead update your own Egg-Eater compiler to match the Forest
-Flame spec.
+Since garbage collection is a **runtime feature**, we provide a working
+Gardener compiler for you: ([github classroom](https://classroom.github.com/a/MJpCDHE7)).
 
-If you are participating in the Rust error study, please make sure you have the
-`build.rs` and `config.txt` files in the new repository and set a new `project`
-value in `config.txt` if you are using the starter code.
+If you use the starter code, you'll only have to modify the runtime.
+However, feel free to instead update your own Egg-Eater compiler to match the Gardener spec.
 
 ## The Gardener Language
 
-The Gardener language extends Diamondback with heap allocation and garbage
+The `Gardener` language extends `Diamondback` with heap allocation and garbage
 collection.
 
 ### Concrete Syntax
