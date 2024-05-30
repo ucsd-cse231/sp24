@@ -72,12 +72,27 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 9 - GC / Type Inference
+
+- [Assignment `harlequin` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html)
+
+- Handouts
+    - Thursday Handout: [(pdf)](static/week9_thu.pdf)
+
+- Reading and Resources
+  - [Jhala on ANF](https://ucsd-progsys.github.io/liquidhaskell/blogposts/2016-09-01-normal-forms.lhs/)
+  - [New on Register Allocation](https://maxsnew.com/teaching/eecs-483-fa21/register-allocation-1.pdf)
+
+
 ### Week 8 - GC / Type Inference
 
 - [Assignment `fer-de-lance` due 5/24](https://classroom.github.com/a/RS24wn_3)
 
+- [Jhala on Type Inference](https://ucsd-cse231.github.io/sp24/week10a/index.html)
+
 - Handouts
     - Tuesday Handout: [(pdf)](static/week8_tue.pdf) 
+
 
 ### Week 7 - Garbage Collection 
 
