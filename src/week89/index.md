@@ -342,7 +342,7 @@ specific categories where we encourage you to share:
   representations of the heap + stack at various stages in garbage collection
   to understand examples
 
-**Student Test Repo:** <https://github.com/ucsd-cse231/gardener-tests>
+**Student Test Repo:** <https://github.com/ucsd-cse231/gardener-student-tests>
 
 
 ## Extension: simple generational GC
