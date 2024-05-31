@@ -338,11 +338,12 @@ specific categories where we encourage you to share:
   test repo**] below. Have test cases case you think will break your
   classmates' GCs? Test cases that helped you fix a bug? Cool programs you just
   want to share? Make a PR! We'll merge in the pull requests every day or two.
-- You may share (publicly on EdStem or otherwise) diagrams or other
+- You may share (publicly on PIAZZ or otherwise) diagrams or other
   representations of the heap + stack at various stages in garbage collection
   to understand examples
 
-Student Test Repo: <https://github.com/ucsd-cse231/gardener-student-tests>
+**Student Test Repo:** <https://github.com/ucsd-cse231/gardener-tests>
+
 
 ## Extension: simple generational GC
 
