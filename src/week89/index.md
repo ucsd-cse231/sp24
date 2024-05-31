@@ -27,7 +27,7 @@ collection.
 
 ```
 <prog> := <defn>* <expr>
-<defn> := (fun (<name> <name>*) <expr>)
+<defn> := (defn (<name> <name>*) <expr>)
 <expr> :=
   | <number>
   | true
@@ -145,18 +145,18 @@ allocating a lot of data which eventually becomes garbage.
 It prints out `"1\n2\n3\n4\n5\n5\n4\n3\n2\n1"`.
 
 ```scheme
-(fun (range n m)
+(defn (range n m)
   (if (= n m) (vec n nil) (vec n (range (add1 n) m))))
 
-(fun (append list1 list2)
+(defn (append list1 list2)
   (if (= list1 nil)
       list2
       (vec (vec-get list1 0) (append (vec-get list1 1) list2))))
 
-(fun (reverse list)
+(defn (reverse list)
   (if (= list nil) nil (append (reverse (vec-get list 1)) (vec (vec-get list 0) nil))))
 
-(fun (printall list) (loop
+(defn (printall list) (loop
   (if (= list nil) (break nil) (block
     (print (vec-get list 0))
     (set! list (vec-get list 1))
