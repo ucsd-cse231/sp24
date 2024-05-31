@@ -77,7 +77,7 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 - [Assignment `harlequin` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html)
 
 - Handouts
-    - Thursday Handout: [(pdf)](static/week9_thu.pdf)
+    - Thursday Handout: [(pdf)](static/week9_thu.pdf) [(annot)] [(pdf)](static/week9_thu_annot.pdf) 
 
 - Reading and Resources
   - [Jhala on ANF](https://ucsd-progsys.github.io/liquidhaskell/blogposts/2016-09-01-normal-forms.lhs/)
@@ -91,7 +91,8 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 - [Jhala on Type Inference](https://ucsd-cse231.github.io/sp24/week10a/index.html)
 
 - Handouts
-    - Tuesday Handout: [(pdf)](static/week8_tue.pdf) 
+    - Tuesday Handout: [(pdf)](static/week8_tue.pdf) [(annot)](static/week8_tue_annot.pdf)
+    - Thursday Notes: [(pdf)](static/week8_thu_annot.pdf) 
 
 
 ### Week 7 - Garbage Collection 
