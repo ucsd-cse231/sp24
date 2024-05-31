@@ -72,9 +72,16 @@ you can know roughly where we are headed.
 
 The typical due dates are that **assignments** and **quizzes** are due Friday evenings.
 
+### Week 10 - Register Allocation
+
+<!--
+- [Assignment `harlequin` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html) [github classroom]( ) 
+-->
+
+
 ### Week 9 - GC / Type Inference
 
-- [Assignment `harlequin` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html)
+- [Assignment `gardener` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html) [github classroom](https://classroom.github.com/a/MJpCDHE7) 
 
 - Handouts
     - Thursday Handout: [(pdf)](static/week9_thu.pdf) [(annot)] [(pdf)](static/week9_thu_annot.pdf) 
