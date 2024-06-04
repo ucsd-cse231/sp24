@@ -308,8 +308,6 @@ Concretely, the stack ends up looking like this:
 
 ## Submission, testing, and grading
 
-Submit via Gradescope.
-
 We will test that your compiler + runtime (a) works, (b) runs out of memory when
 it should, and (c) doesn't run out of memory when it shouldn't.
 
