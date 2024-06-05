@@ -10,8 +10,5 @@
 - [Week 8 - Fer-de-lance](./week8/index.md)
 - [Week 9 - Gardener](./week89/index.md)
 - [Week 10 - Harlequin](./week10a/index.md)
+- [Week 10b - Indigo](./week10b/index.md)
 
-<!--
-- [Week 4 - Caduceus](./week4/index.md)
-- [Week 10 - Green Snake](./week10/index.md)
--->
