@@ -74,10 +74,11 @@ The typical due dates are that **assignments** and **quizzes** are due Friday ev
 
 ### Week 10 - Register Allocation
 
-<!--
-- [Assignment `harlequin` due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html) [github classroom]( ) 
--->
+- [Assignment `indigo` due 6/7](https://ucsd-cse231.github.io/sp24/week10b/index.html) [github classroom](https://classroom.github.com/a/YyzCnF92) 
+- [Assignment `harlequin` (Type Inference) due 6/7](https://ucsd-cse231.github.io/sp24/week10a/index.html) [github classroom](https://classroom.github.com/a/f6Bi18Dr)
 
+- Handouts 
+    - Thursday Handout: [(pdf)](static/week10_thu.pdf) 
 
 ### Week 9 - GC / Type Inference
 
