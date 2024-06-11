@@ -233,7 +233,8 @@ The standards for grade levels are:
   - Exam point total 5 or higher (High Pass on one exam and Pass or better on the other) (including final make-up)
   - **One of**:
     - High Pass on half the assignments, Pass on others, no missing assignments
-    - High Pass on 4 of 5 assignments from (`diamondback`, `egg-eater`, `fer-de-lance`, `gardener`, `harlequin`) assignments. 
+    - High Pass on 4 of 5 assignments from (`diamondback`, `egg-eater`, `fer-de-lance`, `gardener`, `harlequin`) assignments.
+    - High Pass on 3 of 5 assignments from (`diamondback`, `egg-eater`, `fer-de-lance`, `gardener`, `harlequin`) and High Pass in *both* midterms.
 
 - **B**:
   - Exam point total 4 or higher (one High Pass and one Low Pass, or two Passes) (including final make-up)
