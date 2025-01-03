@@ -240,8 +240,8 @@ The standards for grade levels are:
   - Exam point total 4 or higher (one High Pass and one Low Pass, or two Passes) (including final make-up)
   - **One of**:
     - Pass or above on all assignments, up to one missing assignment
-    - High pass on two assignments from A1-4, High pass on two
-      assignments from A5-8, any grade on others
+    - High pass on *one* assignment from (`boa`, `cobra`, `diamondback`) and High pass on *two*
+      assignments from (`egg-eater`, `fer-de-lance`, `gardener`, `harlequin`).
 
 - **C**
   - Exam point total 3 or higher (including final make-up)
