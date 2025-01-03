@@ -12,9 +12,5 @@ Github actions (see .github/workflows)
 - [] canvas
 - [] calendar
 - [] assignments
-- [] github form
-- [] Week1-adder
-- [] Week2-boa
 - [] ... 
 
-- [] clicker form
